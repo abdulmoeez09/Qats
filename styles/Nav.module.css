@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.body{
+  background-color: white;
+  margin: auto;
+  padding: 0px;
+  overflow-x: hidden;
+  background-repeat: repeat;
+  font-family: 'Montserrat',sans-serif;
+  display: grid;
+}
+.container {
+  width: 100%;
+	padding-right:15px;
+	padding-left:15px; 
+  margin-right:auto;
+	margin-left:auto; 
+  font-family: 'Montserrat',sans-serif;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navBar .logo img {
+  float: left;
+  max-height: 120px;
+}
+.is-active {
+  color: #ff5800!important;
+}
+
+.navBar .col-md-3 {
+  z-index: 7;
+}
+.main_menu{
+  display: inline-flex;
+  list-style: none;
+  margin: 0px auto 0;
+  padding: 0;
+  float: right;
+  z-index: 7;
+}
+.menu_item>ul .menu_item > li:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_item{
+  line-height: 23px;
+}
+.li {
+  list-style-type: none;
+}
+.menu_item  {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  color: white;
+  margin: 7px 17px;
+  padding: 0px 10px;
+  text-decoration: none;
+  cursor: pointer;
+ }
+
+.header_middle_logo{
+  width: 20%;
+  float: left;
+}
+.header_middle_menus {
+  width: 80%;
+  float: left;
+  margin-top: 10px;
+}
+.menu_item .menu_item a{
+  margin: 27px 10px;
+} 
+ .header_middle_search {
+  width: 7%;
+  float: right;
+  padding: 36px 3px 27px 3px;
+  border-left: 1px solid lavender;
+}
+.header_middle {
+  display: flex;
+  width: 100%;
+  float: left;
+  position: relative;
+} 
+ .header_middle_logo   {
+  color: #07a8ff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 7px;
+}
+.active{
+  color: #ff1800!important;
+}
+.header_middle_menus span.text  {
+  position: absolute;
+  right: 177px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #ff1800;
+}
+.sub_menus_arrows{
+  position: relative;
+
+}
+.sub_menus_arrows:hover{
+  color: #07a8ff;
+}
+.sub_menus_arrows svg , .sub_menus_arrows_full svg{
+  padding-top: 0px;
+  position: absolute;
+  top: 12px;
+}
+.sub_menus {
+  position: absolute;
+  font-size: 12px;
+  display: none;
+  color:white ;
+  background: #d1411e;
+  border: 1px solid #07a8ff;
+  width: 220px;
+  left: -37px;
+  padding: 2px 0 0 0;
+  z-index: 1000;
+  box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
+  list-style: none;
+  margin-top: 7px;
+} 
+
+ 
+@media (max-width:767px) { 
+  .header_middle  .active {color: #ff3d00 !important;}
+} 
+
+
+@media (min-width:992px) { 
+  .sub_menus_arrows:hover  .sub_menus {
+    display: block;
+  }
+  
+  .sub_menus_arrows_full:hover  .sub_menus {
+    display: block;
+    z-index: 1000000;
+  }
+}
+.menu_item  .sub_menus a {
+  padding: 7px 0 0px 0;
+  margin: 2px 7px;
+}
+.menu_item:hover > a{
+  color: #07a8ff !important;
+}
+.menu_item .sub_menus li:hover a{
+  color: #07a8ff !important;
+}
+
+.header_middle_logo img{
+  max-width: 207px;
+  margin: 17px 0 0 0;
+} 
+
+
+@media(max-width:680px){
+.header_middle_logo{
+  margin-top: 8px;
+}
+.header_middle_logo {width: 77%;}
+.header_middle_menus {width: 20%;}
+.header_middle_logo img {max-width: 197px;margin: 27px 0 0 0;}
+.main_nav .menubar_button:hover {background-color: #f44336;}
+.main_nav .menu_item:hover > a {color: #07a8ff !important ;}
+.main_nav .menubar_button {
+  display: block !important;
+  float: right;
+  background-color: #080808;
+  color: #fff;
+  padding: 6px 7px;
+  border-radius: 5px;
+  margin: 7px auto 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10037;
+} 
+ .main_nav .menubar_button svg{font-size: 27px;}
+ .main_nav  ul.menuq2 {
+  display: flex !important;
+  margin-top: 65px;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute;
+  left: 0;
+  z-index: 1007;
+  background-color: #d1411e;
+  right: 0;
+}
+.main_nav .menu_item a {margin: 1px 7px; text-align:center; color: white;}
+.main_nav  ul.main_menu {display: none}
+.main_nav .sub_menus_arrows:hover .sub_menus {margin: 0 auto; left: 0; right: 0;}
+.sub_menus_Active{display: block!important; margin: 0 auto; left: 0; right: 0;}
+.sub_menus_Active2{display: block!important;}
+.menus_categorysss{display: none;}
+.menus_categorysss2{display: none;}
+.menu_item .sub_menus_full  a {text-align: left;}
+
+ }

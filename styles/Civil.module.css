@@ -1,0 +1,200 @@
+.container{
+    position: relative; 
+    background-color: white;
+    overflow: hidden;
+    font-family: 'Montserrat',sans-serif;
+   
+ }
+ .title{
+    position: absolute;
+    color:lightgray;
+    font-size: 35px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    display: flex;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.items3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.item1{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 20px;
+    
+}
+.item2{
+    flex: 4;
+    display: flex;
+    align-items: flex-end;
+    width: 550px;
+    height: 750px;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+.header{
+    padding: 10px;
+    color:#d1411e;
+    font-weight: bold;
+    text-align: center;
+}
+.heading{
+padding: 10px;
+color: goldenrod;
+font-size: 18px;
+font-weight: 400;
+}
+.paragraph{
+    padding: 10px;
+    font-family: 'Montserrat',sans-serif;
+    margin-left: 40px;
+    text-align: justify;
+}
+.paragraph1{
+    padding: 10px;
+    font-family: 'Montserrat',sans-serif;
+    margin-right: 40px;
+    text-align: center;
+}
+.note{
+    flex: 9;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 60px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: start;
+   
+}
+
+.services{
+    flex: 4;
+    margin-right: 40px;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    font-family: 'Montserrat',sans-serif;
+    text-align:start;
+    background-color:  rgba(216, 213, 213, 0.413);
+
+}
+.Headingservices{
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   font-family: 'Montserrat',sans-serif;
+}
+.Headingservices:hover{
+    color: goldenrod;
+}
+.service{
+    color: #d1411e;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.service:hover{
+    color: goldenrod;
+}
+.message{
+    text-align: center;
+    font-size: 16px;
+}
+.drmessage{
+    font-size: 14px;
+}
+@media screen  and (max-width:680px) {
+   .container{
+    position: relative;
+    margin-top: -10px;
+    font-family: 'Montserrat' , sans-serif;
+    align-items: center;
+    justify-content: center;
+   }
+   .bgImg{
+    margin-top: -10px;
+   }
+   .items{
+    display: flex;
+    margin-top: 80px;
+   }
+   .title{
+    font-size: 16px;
+   }
+   .items2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items:center;
+   }
+   .paragraph1{
+    font-size: 14px;
+    margin-right: 0px;
+   }
+   .header{
+    font-size: 14px;
+   }
+   .paragraph{
+    margin-left: 0px;
+    font-size: 16px;
+   }
+   .item1{
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+   .item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+   .items3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .note{
+    font-size: 14px;
+    padding: 0;
+    margin: 25px;
+   }
+   .services{
+    background-color: lightgray;
+    margin-right: 0;
+     }
+   .service{
+     text-align: justify;
+     }
+     .message{
+        font-size: 16px;
+        text-align: center;
+      }
+      .drmessage{
+      font-size: 14px;
+      }
+}

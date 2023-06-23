@@ -1,0 +1,226 @@
+.container{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    font-family: 'Montserrat',sans-serif;
+    align-items: center;
+    justify-content: center;
+ }
+ .title{
+    position: absolute;
+    color:lightgray;
+    font-size: 35px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width:max-content;
+    height: 100%;
+   position: relative;
+     margin-bottom: 20px; 
+   }
+.items{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.items2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.items3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.item1{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 20px;
+    
+}
+.item2{
+    flex: 4;
+    display: flex;
+    align-items: flex-end;
+    width: 400px;
+    height: 600px;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+.header{
+    padding: 20px;
+    color:#d1411e;
+    text-align: start;
+    margin-left: 50px;
+}
+.message{
+    text-align: center;
+    font-size: 16px;
+}
+.drmessage{
+    font-size: 14px;
+}
+.heading{
+padding: 10px;
+color: goldenrod;
+font-size: 18px;
+font-weight: 400;
+}
+.paragraph{
+    padding: 10px;
+    font-family: 'Montserrat',sans-serif;
+    margin-left: 50px;
+    text-align: justify;
+}
+.paragraph1{
+    padding: 20px;
+    font-family: 'Montserrat',sans-serif;
+    margin-left: 10px;
+    text-align: center;
+}
+.note{
+    flex: 9;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 60px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: start;
+   
+}
+
+.services{
+    flex: 3;
+    margin-right: 40px;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    font-family: 'Montserrat',sans-serif;
+    background-color:  rgba(216, 213, 213, 0.413);
+
+}
+.Headingservices{
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   font-family: 'Montserrat',sans-serif;
+}
+.Headingservices:hover{
+    color: goldenrod;
+}
+.service{
+    color: #d1411e;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.service:hover{
+    color: goldenrod;
+}
+@media screen  and (max-width:680px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+        font-family: 'Montserrat',sans-serif;
+    }
+    .items{
+        margin-top: 80px;
+    }
+    .title{
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .items2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 10px; */
+        margin-top: 10px;
+    }
+    .item1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .paragraph1{
+        font-size: 14px;
+    }
+    .header{
+        font-size: 14px;
+        margin-left: 0px;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat' , sans-serif;
+    }
+    .paragraph{
+        font-size: 13px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .item2{
+        align-items: center;
+        justify-content: center;
+        margin-left: 35px;
+        margin-top: -10px;
+        width: 300px;
+        height: 200px;
+    }
+    .image{
+        width: 300px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .message{
+        font-size: 13px;
+        text-align: center;
+    }
+    .drmessage{
+        font-size: 12px;
+    }
+    .items3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .note{
+        font-size: 12px;
+        text-align:justify;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    .services{
+        /* align-items: center; */
+       background-color: lightgray;
+        justify-content: center;
+       
+    }
+    .service{
+        text-align:justify;
+    }
+    .Headingservices{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+   
+}

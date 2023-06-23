@@ -1,0 +1,122 @@
+.container{
+    height: calc(100vh - 300px);
+    background-color: rgba(34, 34, 34, 0.774);
+    display: flex;
+    
+}
+.item{
+    flex: 1;
+    position: relative;
+    display: flex;
+   
+}
+.item:last-child{
+    flex: 3;
+    padding: 10px ;
+   }
+.img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+.card{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    }
+.card:last-child{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+.fontIconContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin-left: 10px;
+}
+.fontItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: lightgray;
+}
+.Icon{
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-style: 16px;
+    color: #b7903c;
+}
+.text{
+    color: lightgrey;
+}
+.text >b{
+    color: #b7903c;
+}
+.motto{
+    color: #b7903c;
+}
+
+@media screen and (max-width:680px) {
+    .container{
+        height: auto;
+        text-align: center;
+    }
+   .item:first-child{
+    display: none;
+   } 
+    .item:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .motto{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    
+    .fontIconContainer{
+        align-items: center;
+        justify-content: center;
+    }
+    .fontItems{
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        align-items: flex-start;
+        justify-content:flex-start;
+    
+    }
+
+    .phone{
+        font-style: 15px;
+    }
+    .email{
+        font-size: 15px;
+
+    }
+.address{
+        font-size: 12px;
+        
+    }
+}
